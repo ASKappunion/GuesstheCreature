@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Thing</title>
+    <link rel="stylesheet" href="new_game.css">
+</head>
+<body>
+   
+
+    <div id="container">
+        <h1>Guess the Thing</h1>
+        <div id="hint-section">
+            <button id="hint-button">Show Hint</button>
+            <button id="next-hint-button" disabled>Next Hint</button>
+            <div id="hint"></div>
+        </div>
+        <div id="options"></div>
+        <div id="challenge-container">
+            <button id="challenge-button">Challenge</button>
+            <p id="challenge"></p>
+        </div>
+        <p id="game-over">Congratulations! You guessed the correct thing.</p>
+        <p id="try-again-message" class="try-again-message" style="display: none; color: red; text-align: center;">Try Again!</p>
+        <button id="new-game-button">New Game</button>
+        <button onclick="openIndexPage()">Home</button>
+
+    <script>
+        function openIndexPage() {
+            window.location.href = "home.html";
+        }
+    </script>
+
+    </div>
+
+    <script src="new_game.js"></script>
+</body>
+</html>
+
